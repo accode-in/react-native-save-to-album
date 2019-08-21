@@ -1,13 +1,13 @@
 
-# react-native-react-native-save-to-album
+# react-native-save-to-album
 
 ## Getting started
 
-`$ npm install react-native-react-native-save-to-album --save`
+`$ npm install react-native-save-to-album --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-react-native-save-to-album`
+`$ react-native link react-native-save-to-album`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-react-native-save-to-album` and add `RNReactNativeSaveToAlbum.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-save-to-album` and add `RNReactNativeSaveToAlbum.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNReactNativeSaveToAlbum.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +26,18 @@
   - Add `new RNReactNativeSaveToAlbumPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-react-native-save-to-album'
-  	project(':react-native-react-native-save-to-album').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-react-native-save-to-album/android')
+  	include ':react-native-save-to-album'
+  	project(':react-native-save-to-album').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-save-to-album/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-react-native-save-to-album')
+      compile project(':react-native-save-to-album')
   	```
 
 #### Windows
 [Read it! :D](https://github.com/ReactWindows/react-native)
 
-1. In Visual Studio add the `RNReactNativeSaveToAlbum.sln` in `node_modules/react-native-react-native-save-to-album/windows/RNReactNativeSaveToAlbum.sln` folder to their solution, reference from their app.
+1. In Visual Studio add the `RNReactNativeSaveToAlbum.sln` in `node_modules/react-native-save-to-album/windows/RNReactNativeSaveToAlbum.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
   - Add `using React.Native.Save.To.Album.RNReactNativeSaveToAlbum;` to the usings at the top of the file
   - Add `new RNReactNativeSaveToAlbumPackage()` to the `List<IReactPackage>` returned by the `Packages` method
@@ -45,7 +45,7 @@
 
 ## Usage
 ```javascript
-import RNReactNativeSaveToAlbum from 'react-native-react-native-save-to-album';
+import RNReactNativeSaveToAlbum from 'react-native-save-to-album';
 
 // TODO: What to do with the module?
 RNReactNativeSaveToAlbum;
